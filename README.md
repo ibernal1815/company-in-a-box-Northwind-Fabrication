@@ -6,60 +6,83 @@ The environment is designed and maintained as if by a first hire IT Systems Spec
 
 Systems are built incrementally, validated as they are added, and documented with the assumption that another administrator or instructor may rely on this documentation to understand, operate, or recover the environment.
 
+---
+
 ## Environment scope
 
-The lab environment supports the following core functions.
+The lab environment supports the following core functions:
 
-* Identity and access management using Active Directory
-* Group based permissions and least privilege access
-* Department based file services
-* Basic network segmentation
-* Centralized logging and monitoring
-* Backups with documented recovery testing
-* User onboarding and offboarding automation using PowerShell
+- Identity and access management using Active Directory
+- Group based permissions and least privilege access
+- Department based file services
+- Basic network segmentation
+- Centralized logging and monitoring
+- Backups with documented recovery testing
+- User onboarding and offboarding automation using PowerShell
 
 The scope is intentionally limited to remain supportable by a single administrator.
+
+---
 
 ## Host system constraints
 
 All virtual machines run on a single workstation using VMware Workstation Pro. Design decisions explicitly account for these limits.
 
-* Storage: 512GB NVMe
-* Memory: 48GB RAM
-* CPU: Intel i5 14400F
+- Storage: 512GB NVMe
+- Memory: 48GB RAM
+- CPU: Intel i5 14400F
 
 Services are consolidated where appropriate, and unnecessary components are avoided to prevent over allocation and instability.
+
+---
 
 ## Design approach
 
 This project prioritizes clarity, reliability, and recoverability over complexity.
 
-* Systems are built in phases rather than all at once
-* Each major component is validated before moving forward
-* Trade offs and limitations are documented honestly
-* Automation scripts favor readability and safe failure
-* Recovery procedures are treated as first class documentation
+- Systems are built in phases rather than all at once
+- Each major component is validated before moving forward
+- Trade offs and limitations are documented honestly
+- Automation scripts favor readability and safe failure
+- Recovery procedures are treated as first class documentation
 
 Mistakes are expected and planned for through backups, logging, and clear operational notes.
+
+---
 
 ## Repository structure
 
 The repository is organized into the following top level areas.
 
-* Documentation
-  Design decisions, build steps, and operational procedures
+- **Documentation**  
+  Design decisions, build steps, and operational procedures  
+  - Environment Overview  
+  - Network Design  
+  - Server Builds  
+  - Identity And Access  
+  - File Services  
+  - Logging And Monitoring  
+  - Backups And Recovery  
+  - Change Log  
 
-* Scripts
-  PowerShell scripts for onboarding, offboarding, and shared functions
+- **Scripts**  
+  PowerShell automation used in daily operations  
+  - Onboarding  
+  - Offboarding  
+  - Shared Functions  
 
-* Configs
-  Exported configurations such as Group Policy backups and DHCP settings
+- **Configs**  
+  Exported and reference configurations  
+  - GPO Backups  
+  - DHCP Exports  
 
-* Diagrams
+- **Diagrams**  
   Network and system diagrams
 
-* Evidence
+- **Evidence**  
   Screenshots and results from validation and recovery testing
+
+---
 
 ## Documentation style
 
@@ -67,19 +90,22 @@ All documentation is written in a student professional tone. The intent is to be
 
 Exaggerated claims, marketing language, and idealized designs are intentionally avoided.
 
+---
+
 ## Intended audience
 
-This repository is written for the following audiences.
+This repository is written for:
 
-* Instructors evaluating applied IT skills
-* Entry level and junior IT professionals
-* Administrators looking for a realistic small environment reference
+- Instructors evaluating applied IT skills
+- Entry level and junior IT professionals
+- Administrators looking for a realistic small environment reference
 
 The documentation assumes basic familiarity with Windows Server, Active Directory, and PowerShell, while avoiding unnecessary jargon where possible.
+
+---
 
 ## Project status
 
 This is a long running project. Features are added gradually, and documentation is updated alongside implementation.
 
 Meaningful changes are recorded in the change log with context and reasoning.
-
