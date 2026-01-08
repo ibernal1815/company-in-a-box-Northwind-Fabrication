@@ -16,7 +16,7 @@ LOG01 provides centralized log collection for servers and selected client system
 - Operating system: Ubuntu Server LTS
 - vCPU: 2
 - Memory: 4 GB
-- Disk: 80 GB
+- Disk: 60 GB
 - Network adapter: VMnet10
 
 ## Network configuration
