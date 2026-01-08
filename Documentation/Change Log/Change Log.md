@@ -1,7 +1,6 @@
 # Change Log
 
-Record meaningful changes to the environment. Include date, summary, and reason.
-
 ## Entries
-- 2026-01-07: Repository structure created in Codespaces and initial documentation added.
 
+- 2026-01-07  
+  Defined domain structure, network addressing, server roles, and baseline configurations.
