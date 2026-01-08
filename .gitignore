@@ -1,0 +1,16 @@
+# Add a basic .gitignore
+cat > ".gitignore" << 'EOF'
+# OS and editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# PowerShell
+*.psd1
+*.psm1
+*.bak
+
+# Logs and outputs
+*.log
+*.tmp
